@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  background: rgb(11, 7, 12);
+  color: #000;
+  position: relative;
+}
+
+.intro {
+  background: radial-gradient(
+    circle,
+    rgba(15, 7, 16, 1) 18%,
+    rgba(20, 9, 29, 1) 33%,
+    rgba(26, 10, 38, 1) 48%,
+    rgba(20, 11, 27, 1) 64%,
+    rgba(15, 3, 24, 1) 81%,
+    rgba(15, 7, 21, 1) 94%
+  );
+  color: #f8f8f8;
+  height: 110vh;
+  border-radius: 0 5rem 5rem 0;
+  position: relative;
+  &__navbar {
+    position: relative;
+    transition: position 3s;
+    top: 0;
+
+    &--logo {
+      position: absolute;
+      left: 1.5rem;
+      top: 1rem;
+      width: 12rem;
+      height: 12rem;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &-list {
+      position: absolute;
+      color: #f8f8f8;
+      right: 5rem;
+      top: 2rem;
+      &_list {
+        list-style: none;
+        display: inline-block;
+        &--btn {
+          display: inline-block;
+          padding: 1.5rem;
+          a {
+            color: #f8f8f8;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1.8rem;
+          }
+        }
+      }
+    }
+  }
+  &__profile {
+    width: 30rem;
+    position: absolute;
+    top: 25%;
+    left: 55%;
+    border-radius: 5rem;
+    transform: rotate(5deg);
+    border: none;
+    box-shadow: 0 0 1rem 1rem rgba(47, 17, 80, 0.603);
+    transition: all 0.5s;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 4rem;
+    }
+    &:hover {
+      transform: rotate(0);
+      box-shadow: 0 0 1rem 1.2rem rgb(47, 17, 80);
+    }
+  }
+}
+
+.info {
+  width: 100%;
+  background: rgb(6, 6, 8);
+  background: linear-gradient(
+    90deg,
+    rgba(6, 6, 8, 1) 18%,
+    rgba(13, 9, 17, 1) 33%,
+    rgba(17, 9, 23, 1) 48%,
+    rgba(19, 10, 27, 1) 64%,
+    rgba(18, 6, 27, 1) 81%,
+    rgba(15, 7, 21, 1) 94%
+  );
+  border-radius: 5rem;
+  &__photo {
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+
+    &--panel {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 3rem;
+      flex: 0.5;
+      cursor: pointer;
+      margin: 2rem;
+      position: relative;
+      transition: all 0.7s ease-out;
+
+      &-active {
+        flex: 5;
+      }
+    }
+  }
+}
