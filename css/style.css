@@ -22,8 +22,8 @@ body {
   position: relative; }
   .intro__navbar {
     position: relative;
-    transition: position 3s;
-    top: 0; }
+    top: 0;
+    transition: all 5s; }
     .intro__navbar--logo {
       position: absolute;
       left: 1.5rem;
@@ -68,6 +68,10 @@ body {
     .intro__profile:hover {
       transform: rotate(0);
       box-shadow: 0 0 1rem 1.2rem #2f1150; }
+
+.skill {
+  width: 90vw;
+  min-height: 80vh; }
 
 .info {
   width: 100%;
